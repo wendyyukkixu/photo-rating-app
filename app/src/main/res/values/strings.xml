@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fotag Mobile</string>
+    <string name="DEBUG_FOTAG_ID">CS349_DEBUG_FOTAG</string>
+    <string name="view_2_MenuItem">View 2</string>
+
+<!--    Toolbar Strings-->
+    <string name="toolbar_load_image">Load Image</string>
+    <string name="toolbar_load_image_set">Load Image Set</string>
+    <string name="toolbar_clear_images">Clear</string>
+    <string name="toolbar_filter">Filter</string>
+</resources>

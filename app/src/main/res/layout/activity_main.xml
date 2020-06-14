@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorToolbar">
+        <ImageView
+                android:id="@+id/toolbar_load_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/load"
+                android:scaleX=".75"
+                android:scaleY=".75"
+                android:contentDescription="@string/toolbar_load_image"/>
+        <ImageView
+                android:id="@+id/toolbar_load_image_set"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/load_set"
+                android:scaleX=".75"
+                android:scaleY=".75"
+                android:contentDescription="@string/toolbar_load_image_set"/>
+        <ImageView
+                android:id="@+id/toolbar_clear_images"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/clear"
+                android:scaleX=".75"
+                android:scaleY=".75"
+                android:contentDescription="@string/toolbar_clear_images"/>
+        <RatingBar
+                android:id="@+id/toolbar_rating_bar"
+                style="@style/Widget.AppCompat.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:scaleX=".60"
+                android:scaleY=".60"
+                android:numStars="5"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".MainActivity">
+            <GridLayout
+                    android:id="@+id/gridlayout"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:columnCount="1">
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+<!-- Skeleton was based off sample code in 8.Android/1.HelloAndroid/app/src/main/res/layout/activity_main.xml-->

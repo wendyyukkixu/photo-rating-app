@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="250dp">
+                <ImageButton
+                        android:id="@+id/grid_item_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"/>
+        </FrameLayout>
+        <RatingBar
+                android:id="@+id/grid_item_rating_bar"
+                style="@style/Widget.AppCompat.RatingBar"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:numStars="5"
+                android:gravity="center_horizontal"/>
+
+</LinearLayout>
